@@ -48,55 +48,31 @@
 .navbar ul li:hover::after{
     width: 100%;
 }
-.content{
-    width: 100%;
+.form-box{
+    width: 90%;
+    max-width: 450px;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-    color: #ffffff;
-}
-.content h1{
-    font-size: 50px;
-    margin-top: 80px;
-}
-
-.content p{
-    margin: 20px auto;
-    font-weight: 100;
-    line-height: 25px;
-}
-button{
-    width: 200px;
-    padding: 15px 0;
-    text-align: center;
-    margin: 20px 10px;
-    border-radius: 25px;
-    font-weight: bold;
-    border: 2px solid #ffffff;
-    background: transparent;
-    cursor: pointer;
-    color: #ffffff;
-    position: relative;
-    overflow: hidden;
-}
-span{
+    left: 50%;
+    transform: translate(-50%,-50%);
     background: #ffffff;
-    height: 100%; 
-    width: 0%;
-    border-radius: 25px;
+    padding: 50px 60px 70px;
+    text-align: center;
+}
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: aqua;
+    position: relative;
+}
+.form-box h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #ffffff;
     position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: 0.5s;
-}
-
-button:hover span{
-    width: 100%;
-}
-
-button:hover{
-    border: none;
-    color: black;
+    bottom: -12px;
+    left: 50%;
+    transform: translate(-50%);
 }
